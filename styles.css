@@ -130,6 +130,10 @@ ul {
   background: #7c090d;
 }
 
+
+/* BUG: The background is not fiting
+        the screen size correctly
+*/
 @media (max-width: 720px) {
   #cover-section {
     width: 393px;
