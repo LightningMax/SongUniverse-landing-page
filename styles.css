@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --header-bg: #f1d302;
+  --hero-bg: #161925;
+  --cta-bg: #c1292e;
+  --color-4: #235789;
+  --color-5: #fdfffc;
+}
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hammersmith-one-regular {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background-color: var(--header-bg);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header nav ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: black;
+  font-family: "Hammersmith One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+header nav ul li a:hover {
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+#logo span {
+  font-size: 42px;
+  font-family: "Jersey 10";
+}
+
+#menu-buger {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  #logo {
+    margin-left: 10px;
+  }
+
+  #menu-buger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+  }
+}
