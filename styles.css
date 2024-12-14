@@ -86,7 +86,7 @@ ul {
   display: none;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 920px) {
   header nav {
     display: flex;
     justify-content: space-between;
@@ -178,6 +178,7 @@ ul {
 #collections {
   display: flex;
   flex-direction: column;
+  max-width: 90%;
   padding: 40px;
   margin: auto;
 }
@@ -195,7 +196,7 @@ ul {
 
 .collection-container {
   position: relative;
-  display: block;  
+  display: block;
 }
 
 .collection-container img {
@@ -214,10 +215,10 @@ ul {
   text-align: center;
   font-size: 32px;
   top: 0;
-  left: 0; 
+  left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   transition: opacity 0.3 ease;
 }
 
@@ -229,10 +230,71 @@ ul {
   #collections > div {
     display: flex;
     flex-direction: column;
-  } 
+  }
 
   #collections h2 {
     text-align: center;
   }
 }
 
+#audio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  gap: 30px;
+  max-width: 90%;
+  margin: auto;
+}
+
+#audio h2 {
+  font-family: "Hammersmith One";
+  font-size: var(--primary-font-size);
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.audio-container {
+  display: flex;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 20px 20px 0px;
+}
+
+.audio-container div {
+  display: flex;
+  padding: 10px 40px 20px 40px;
+  flex: 1;
+  flex-direction: column;
+  background-color: var(--color-4);
+  border-radius: inherit;
+}
+
+.audio-container div span {
+  font-family: "Hammersmith One";
+  font-size: 24px;
+  color: var(--white-color);
+}
+
+.audio-container div div {
+  gap: 40px;
+}
+
+@media (max-width: 720px) {
+  .audio-container {
+    flex-direction: column;
+    border-radius: 0px;
+  }
+
+  .audio-container div span {
+    font-size: 20px;
+  }
+
+  .audio-container div div {
+    gap: 10px;
+  }
+}
