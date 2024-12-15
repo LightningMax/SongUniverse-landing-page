@@ -333,7 +333,6 @@ ul {
   #video > div {
     display: flex;
     flex-direction: column;
-    
   }
 }
 
@@ -355,7 +354,6 @@ ul {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
-  
 }
 
 #artists div img {
@@ -373,3 +371,39 @@ ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+#a-propos {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+}
+
+#a-propos h2 {
+  font-size: var(--primary-font-size);
+}
+
+#a-propos p {
+  font-size: 24px;
+  text-align: center;
+  
+}
+
+#a-propos img {
+  max-width: 100%;
+}
+
+@media (max-width: 720px) {
+  #a-propos h2 {
+    font-size: 32px;
+  }
+
+  #a-propos p {
+    font-size: 16px;
+  }
+}
+
