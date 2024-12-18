@@ -79,7 +79,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left: 30px; */
 }
 
 #logo span {
@@ -95,21 +94,21 @@ ul {
   header nav {
     display: flex;
     justify-content: space-between;
+    padding: 2px 20px;
   }
 
   header nav ul {
     display: none;
   }
 
-  #logo {
-    margin-left: 10px;
+  #logo span {
+    font-size: 40px;
   }
 
   #menu-buger {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 18px;
   }
 }
 
@@ -123,7 +122,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 550px;
+  height: 660px;
 }
 
 #cover-section h1 {
@@ -393,7 +392,6 @@ ul {
 #a-propos p {
   font-size: 24px;
   text-align: center;
-  
 }
 
 #a-propos img {
@@ -428,24 +426,24 @@ ul {
 
 #contact div h2 {
   font-size: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-bottom: 18px;
 }
 
 #contact div p {
   font-size: 16px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-#contact div h2, p {
+#contact div h2,
+p {
   text-align: center;
 }
 
 #contact form {
   width: 60%;
 }
-
 
 .textfield {
   display: flex;
@@ -454,11 +452,12 @@ ul {
 
 .textfield label {
   font-family: "Hammersmith One";
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 12px 0px;
 }
 
-.textfield input, textarea {
+.textfield input,
+textarea {
   padding: 12px;
 }
 
@@ -466,7 +465,7 @@ ul {
   #contact > div {
     padding: 18px;
   }
-  
+
   #contact div h2 {
     font-size: 36px;
   }
@@ -485,7 +484,7 @@ footer {
 }
 
 footer span {
-  font-family: 'Jersey 10';
+  font-family: "Jersey 10";
   font-size: 64px;
   text-align: center;
 }
