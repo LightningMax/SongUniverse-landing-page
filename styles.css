@@ -214,7 +214,6 @@ ul {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  transition: opacity 0.3 ease;
 }
 
 .collection-text:hover {
@@ -406,4 +405,53 @@ ul {
     font-size: 16px;
   }
 }
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-4);
+  padding: 10px 60px;
+  max-width: 70%;
+  margin: auto;
+}
+
+#contact > div {
+  padding: 40px;
+}
+
+#contact div h2 {
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+#contact div p {
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#contact div h2, p {
+  text-align: center;
+}
+
+#contact form {
+  width: 60%;
+}
+
+
+.textfield {
+  display: flex;
+  flex-direction: column;
+}
+
+.textfield label {
+  font-family: "Hammersmith One";
+  color: #FFFFFF;
+  padding: 12px 0px;
+}
+
+.textfield input, textarea {
+  padding: 12px;
+} 
 
