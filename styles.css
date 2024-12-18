@@ -140,9 +140,6 @@ ul {
   background: #7c090d;
 }
 
-/* BUG: The background is not fiting
-        the screen size correctly
-*/
 @media (max-width: 720px) {
   #cover-section h1 {
     font-size: 40px;
@@ -301,6 +298,7 @@ ul {
   padding: 40px;
   max-width: 90%;
   margin: auto;
+  margin-bottom: 80px;
 }
 
 #video h2 {
@@ -340,12 +338,12 @@ ul {
   flex-direction: column;
   max-width: 90%;
   margin: auto;
+  margin-bottom: 80px;
 }
 
 #artists h2 {
   font-size: var(--primary-font-size);
-  margin-top: 80px;
-  padding: 40px;
+  padding: 60px 0px;
   text-align: center;
 }
 
@@ -380,6 +378,7 @@ ul {
   flex-direction: column;
   gap: 30px;
   padding: 40px;
+  margin-bottom: 80px;
 }
 
 #a-propos h2 {
@@ -409,11 +408,13 @@ ul {
 #contact {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: var(--color-4);
-  padding: 10px 60px;
-  max-width: 70%;
+  max-width: 90%;
   margin: auto;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 #contact > div {
@@ -423,6 +424,7 @@ ul {
 #contact div h2 {
   font-size: 36px;
   color: #FFFFFF;
+  padding-bottom: 18px;
 }
 
 #contact div p {
@@ -453,7 +455,22 @@ ul {
 
 .textfield input, textarea {
   padding: 12px;
-} 
+}
+
+@media (max-width: 720px) {
+  #contact > div {
+    padding: 18px;
+  }
+  
+  #contact div h2 {
+    font-size: 36px;
+  }
+
+  #contact div p {
+    font-size: 16px;
+    padding: 0px 12px;
+  }
+}
 
 footer {
   background-color: var(--header-bg);
