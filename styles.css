@@ -455,3 +455,14 @@ ul {
   padding: 12px;
 } 
 
+footer {
+  background-color: var(--header-bg);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+footer span {
+  font-family: 'Jersey 10';
+  font-size: 64px;
+}
