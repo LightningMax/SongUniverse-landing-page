@@ -4,12 +4,14 @@
 }
 
 :root {
-  --header-bg: #f1d302;
-  --hero-bg: #161925;
-  --cta-bg: #c1292e;
-  --color-4: #235789;
-  --white-color: #fdfffc;
+  --default-yellow-color: #f1d302;
+  --default-blue-color: #235789;
+  --default-red-color: #c1292e;
+  --default-bg-color: #161925;
+  --cta-hover-color: #7c090d;
   --primary-font-size: 40px;
+  --default-h2-size: 36px;
+  --default-desktop-max-width: 1280px;
 }
 
 .jersey-10-regular {
@@ -28,7 +30,8 @@ h1,
 h2,
 h3,
 p,
-a {
+a,
+span {
   font-family: "Hammersmith One";
 }
 
@@ -37,7 +40,7 @@ a {
 }
 
 header {
-  background-color: var(--header-bg);
+  background-color: var(--default-yellow-color);
 }
 
 button {
@@ -63,12 +66,11 @@ header nav ul a {
   text-decoration: none;
   color: black;
   font-style: normal;
-  font-weight: 400;
   font-size: 30px;
 }
 
-header nav ul li a:hover {
-  color: #ffffff;
+a:hover {
+  color: white;
 }
 
 ul {
@@ -129,19 +131,19 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  color: #ffffff;
+  color: white;
 }
 
 .cta {
   background: none;
-  background-color: var(--cta-bg);
+  background-color: var(--default-red-color);
   border: none;
   padding: 20px 100px;
-  color: #ffffff;
+  color: white;
 }
 
 .cta:hover {
-  background: #7c090d;
+  background: var(--cta-hover-color);
 }
 
 @media (max-width: 720px) {
@@ -154,14 +156,14 @@ ul {
 }
 
 #info {
-  background-color: var(--hero-bg);
+  background-color: var(--default-bg-color);
   padding: 40px;
 }
 
 #info h2 {
   padding: 10px;
   font-size: 40px;
-  color: #ffffff;
+  color: white;
   text-align: center;
 }
 
@@ -174,7 +176,7 @@ ul {
 #collections {
   display: flex;
   flex-direction: column;
-  max-width: 90%;
+  max-width: var(--default-desktop-max-width);
   padding: 40px;
   margin: auto;
 }
@@ -207,7 +209,6 @@ ul {
   position: absolute;
   justify-content: center;
   align-items: center;
-  color: var(--white-color);
   text-align: center;
   font-size: 32px;
   top: 0;
@@ -238,7 +239,7 @@ ul {
   justify-content: center;
   padding: 30px;
   gap: 30px;
-  max-width: 90%;
+  max-width: var(--default-desktop-max-width);
   margin: auto;
 }
 
@@ -265,14 +266,14 @@ ul {
   padding: 10px 40px 20px 40px;
   flex: 1;
   flex-direction: column;
-  background-color: var(--color-4);
+  background-color: var(--default-blue-color);
   border-radius: inherit;
 }
 
 .audio-container div span {
   font-family: "Hammersmith One";
   font-size: 24px;
-  color: var(--white-color);
+  color: white;
 }
 
 .audio-container div div {
@@ -300,7 +301,7 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 40px;
-  max-width: 90%;
+  max-width: var(--default-desktop-max-width);
   margin: auto;
   margin-bottom: 80px;
 }
@@ -340,7 +341,7 @@ ul {
 #artists {
   display: flex;
   flex-direction: column;
-  max-width: 90%;
+  max-width: var(--default-desktop-max-width);
   margin: auto;
   margin-bottom: 80px;
 }
@@ -374,15 +375,15 @@ ul {
 }
 
 #a-propos {
-  max-width: 90%;
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  padding: 40px;
+  margin: auto;
   margin-bottom: 80px;
+  padding: 40px;
+  max-width: var(--default-desktop-max-width);
 }
 
 #a-propos h2 {
@@ -390,7 +391,7 @@ ul {
 }
 
 #a-propos p {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -413,8 +414,8 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-4);
-  max-width: 90%;
+  background-color: var(--default-blue-color);
+  max-width: var(--default-desktop-max-width);
   margin: auto;
   padding-bottom: 80px;
   margin-bottom: 80px;
@@ -425,15 +426,14 @@ ul {
 }
 
 #contact div h2 {
-  font-size: 36px;
-  color: #ffffff;
+  font-size: var(--default-h2-size);
+  color: white;
   padding-bottom: 18px;
 }
 
 #contact div p {
   font-size: 16px;
-  text-align: center;
-  color: #ffffff;
+  color: white;
 }
 
 #contact div h2,
@@ -452,7 +452,7 @@ p {
 
 .textfield label {
   font-family: "Hammersmith One";
-  color: #ffffff;
+  color: white;
   padding: 12px 0px;
 }
 
@@ -467,7 +467,7 @@ textarea {
   }
 
   #contact div h2 {
-    font-size: 36px;
+    font-size: var(--default-h2-size);
   }
 
   #contact div p {
@@ -477,7 +477,7 @@ textarea {
 }
 
 footer {
-  background-color: var(--header-bg);
+  background-color: var(--default-yellow-color);
   display: flex;
   justify-content: center;
   padding: 10px;
