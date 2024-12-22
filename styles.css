@@ -11,7 +11,8 @@
   --cta-hover-color: #7c090d;
   --primary-font-size: 40px;
   --default-h2-size: 36px;
-  --default-desktop-max-width: 1280px;
+  --default-desktop-max-width: 80em;
+  --default-mobile-max-width: 330px;
 }
 
 .jersey-10-regular {
@@ -352,24 +353,28 @@ ul {
   text-align: center;
 }
 
-#artists div {
+.artists-gallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
 }
 
-#artists div img {
+.artists-gallery img {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-#artists div img:hover {
+.artists-gallery img:hover {
   transform: scale(1.1);
 }
 
 @media (max-width: 700px) {
-  #artists div {
+  #artists {
+    max-width: 90%;
+  }
+  
+  .artists-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
