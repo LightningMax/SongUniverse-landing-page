@@ -90,7 +90,7 @@ ul {
   display: none;
 }
 
-@media (max-width: 920px) {
+@media screen and (max-width: 720px) {
   header nav {
     display: flex;
     justify-content: space-between;
@@ -117,7 +117,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 150px;
   background-image: url("assets/images/cover.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,7 +136,8 @@ ul {
   background: none;
   background-color: var(--default-red-color);
   border: none;
-  padding: 20px 100px;
+  padding: 20px 140px;
+  font-size: 20px;
   color: white;
 }
 
@@ -150,6 +151,10 @@ ul {
     justify-content: center;
     text-align: center;
     padding: 20px;
+  }
+
+  .cta {
+    padding: 20px 100px;
   }
 }
 
@@ -165,7 +170,7 @@ ul {
   text-align: center;
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
   #info h2 {
     font-size: 20px;
   }
@@ -220,7 +225,7 @@ ul {
   opacity: 1;
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
   #collections > div {
     display: flex;
     flex-direction: column;
@@ -261,7 +266,7 @@ ul {
 
 .audio-container div {
   display: flex;
-  padding: 10px 40px 20px 40px;
+  padding: 20px 40px 20px 20px;
   flex: 1;
   flex-direction: column;
   background-color: var(--default-blue-color);
@@ -278,7 +283,11 @@ ul {
   gap: 40px;
 }
 
-@media (max-width: 720px) {
+.audio-container audio {
+  width: 100%;
+}
+
+@media screen and (max-width: 720px) {
   .audio-container {
     flex-direction: column;
     border-radius: 0px;
@@ -329,7 +338,7 @@ ul {
   padding: 10px 0px;
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
   #video > div {
     display: flex;
     flex-direction: column;
@@ -366,11 +375,11 @@ ul {
   transform: scale(1.1);
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   #artists {
     max-width: 90%;
   }
-  
+
   .artists-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -405,7 +414,7 @@ ul {
   max-width: 100%;
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
   #a-propos h2 {
     font-size: 32px;
   }
@@ -427,28 +436,30 @@ ul {
   margin-bottom: 80px;
 }
 
-#contact > div {
+#contact header {
   padding: 40px;
 }
 
-#contact div h2 {
+#contact header h2,
+p {
+  text-align: center;
+}
+
+#contact header h2 {
   font-size: var(--default-h2-size);
   color: white;
   padding-bottom: 18px;
 }
 
-#contact div p {
+#contact header p {
   font-size: 16px;
   color: white;
 }
 
-#contact div h2,
-p {
-  text-align: center;
-}
-
 #contact form {
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
 }
 
 .textfield {
@@ -467,18 +478,30 @@ textarea {
   padding: 12px;
 }
 
-@media (max-width: 720px) {
-  #contact > div {
+#send-input {
+  align-self: center;
+}
+
+@media screen and (max-width: 720px) {
+  #contact {
+    max-width: 90%;
+  }
+  
+  #contact header {
     padding: 18px;
   }
 
-  #contact div h2 {
+  #contact header h2 {
     font-size: var(--default-h2-size);
   }
 
-  #contact div p {
+  #contact header p {
     font-size: 16px;
-    padding: 0px 12px;
+    padding: 5px 12px;
+  }
+
+  #contact form {
+    width: 300px;
   }
 }
 
