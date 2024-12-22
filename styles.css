@@ -40,10 +40,6 @@ a {
   text-decoration: none;
 }
 
-header {
-  background-color: var(--default-yellow-color);
-}
-
 button {
   background: none;
   border: none;
@@ -54,6 +50,7 @@ header nav {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 2px 50px;
+  background-color: var(--default-yellow-color);
 }
 
 header nav ul {
@@ -391,13 +388,17 @@ ul {
   max-width: var(--default-desktop-max-width);
 }
 
+#a-propos h2, p {
+  text-align: center;
+}
+
 #a-propos h2 {
   font-size: var(--primary-font-size);
+  padding-bottom: 30px;
 }
 
 #a-propos p {
   font-size: 20px;
-  text-align: center;
 }
 
 #a-propos img {
