@@ -64,7 +64,7 @@ chaque dispositif comme les smartphones, pcs, tablettes etc...
 
 ## Extra:
 - Cette webpage est hébergé sur github pages, voici le lien:
-https://lightningmax.github.io/projet-maquette/
+https://lightningmax.github.io/SongUniverse-landing-page/
 
 - J'ai essaié d'utiliser git et github de façon consise, chaque commit a une description de
 ce qui a été changé.
